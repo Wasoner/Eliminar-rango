@@ -25,8 +25,30 @@ void eliminarRango(Nodo **phead, double y, double z) {
     Nodo *n = *phead;
 
     while (n != NULL ) {
+
         printf("%d\n", n ->x);
-        n = n -> prox;
+        if ( n -> x >=y && n->x <= z) {
+
+            f_Rango = 1;
+            Nodo *nodoSiguiente = n -> prox ; 
+            if (nodoSiguiente != NULL && nodoAnterior != NULL){
+
+                //Enlazar el nodo anterior al nodo siguiente
+                nodoAnterior->prox = nodoSiguiente;
+                
+            } else if (nodoSiguiente == NULL && nodoAnterior != NULL) {
+                
+                nodoAnterior->prox = NULL;
+            }
+
+            free(n);
+            n = nodoSiguiente;
+            
+            
+
+
+
+        }
     }
     
 

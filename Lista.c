@@ -66,6 +66,12 @@ void eliminarRango(Nodo **phead, double y, double z) {
 
         }
     }
+
+    
+    if (f_NodoPrincipal == 0)
+    {
+      *phead = NULL;
+    }
     
 
   
@@ -98,7 +104,7 @@ int main(){
   
 
     Nodo *heap = n5;
-    eliminarRango(&heap, 0 , 1);
+    eliminarRango(&heap, 0 , 9);
     while (heap != NULL)
     {
         printf("%d", heap->x);

@@ -1,0 +1,29 @@
+Archivos de textos
+
+se debe usar Fseek
+Leer solo una linea para ver la cantidad de caracteres.
+para calcular el tamano y el numero de lineas en el archivo usando ftell.
+si se cuanto tamno ocupa, se que todas las lineas son del mismo tamano, con una division se puede calcular el numero de lineas
+
+
+
+lluvia de ideas para el psudocodigo
+
+- Conocer el tamano del archivo completo
+- Conocer el tamano de caracteres de las lineas del dicc.txt // el tamano es el mismo para todas las lineas
+- Calcular el total de lineas que tiene el arvicho 
+- Conocer los errores que se pueden dar en el programa
+- ver si existe la llave 
+- si no existe la llave retornar un error, con perror y finalizar el programa
+- ver si se puede abrir el archivo 
+- si no existe el archivo retornar error 
+- ver si el tamano del archivo es consistente con el tamano de la lina, vale decir, que sean multiplos para poder calcular el numero toal de lineas.
+- si existe incongruencia, retornar error 
+- Ver si el archivo se encuentra vacio
+- si el archivo esta vacio, retornar perror
+
+- No se debe leer el archivo completo
+- solo se debe entregar el valor asociado a la llave, vale decir, entragar el contenido de la direccion en la que apunta el puntero
+- Usar fseek.
+
+-Recorrer el archivo linea por linea, hasta la ultima linea (la lectura del archivo es circular)
